@@ -1,0 +1,47 @@
+{
+  "name": "socialía",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest",
+    "seed": "npx tsx worker/seed.ts",
+    "compute": "npx tsx worker/compute-features.ts",
+    "pdf": "npx tsx worker/pdf-export.ts",
+    "migrate": "npx tsx worker/apply-migrations.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.3",
+    "@supabase/ssr": "^0.9.0",
+    "@supabase/supabase-js": "^2.47.10",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.3.1",
+    "jspdf": "^2.5.2",
+    "next": "14.2.18",
+    "react": "^18",
+    "react-dom": "^18",
+    "recharts": "^2.14.1",
+    "tailwind-merge": "^2.6.0",
+    "vis-data": "^7.1.9",
+    "vis-network": "^9.1.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/pg": "^8.18.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.18",
+    "pg": "^8.19.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "vitest": "^2.1.8"
+  }
+}
