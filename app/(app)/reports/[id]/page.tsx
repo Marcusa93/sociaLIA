@@ -1,6 +1,7 @@
 import { createClient } from '@/lib/supabase/server'
 import { redirect, notFound } from 'next/navigation'
 import { Button } from '@/components/ui'
+import { PrintButton } from '@/components/ui/PrintButton'
 import Link from 'next/link'
 
 export default async function ReportViewPage({
@@ -37,13 +38,7 @@ export default async function ReportViewPage({
           <Button variant="ghost" size="sm">← Volver a reportes</Button>
         </Link>
         <div className="flex gap-2">
-          <Button
-            variant="secondary"
-            size="sm"
-            onClick={() => window.print()}
-          >
-            Imprimir / PDF
-          </Button>
+          <PrintButton />
         </div>
       </div>
       <div className="bg-white rounded-2xl overflow-hidden shadow-xl">
